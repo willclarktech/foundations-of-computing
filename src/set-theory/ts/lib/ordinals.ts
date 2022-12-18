@@ -11,7 +11,7 @@
 export type Ordinal = ReadonlySet<Ordinal>;
 export const zero: Ordinal = new Set();
 
-export const decode = (n: Ordinal): number => n.size;
+export const decodeOrdinal = (n: Ordinal): number => n.size;
 export const isZero = (n: Ordinal): boolean => n.size === 0;
 
 export const increment = (n: Ordinal): Ordinal => new Set([...n, n]);
